@@ -1,0 +1,25 @@
+{
+  "name": "dorm-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "vite --host 0.0.0.0",
+    "test": "vitest run",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "supertest": "^7.0.0",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
+  }
+}
